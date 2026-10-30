@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{--ink:#172522;--forest:#203b35;--ivory:#f5f2eb;--sand:#e9e2d6;--brass:#b89558;--muted:#727a72}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px;overflow-x:clip}
+body{margin:0;min-width:320px;overflow-x:clip;background:var(--ivory);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+button,a{ -webkit-tap-highlight-color:transparent }
+a{color:inherit;text-decoration:none}
+.display{font-family:'Manrope',sans-serif;letter-spacing:-.065em}
+.container{width:calc(100% - 48px);max-width:1180px;margin-inline:auto}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:7px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:#b89558;color:#172522}.btn-primary:hover{background:#c7a66c}
+.btn-dark{background:#172522;color:#f5f2eb}.btn-dark:hover{background:#29453e}
+.section-pad{padding:112px 0}
+@media(max-width:700px){.container{width:calc(100% - 48px)}.section-pad{padding:68px 0}}
+
+img,svg{max-width:100%}
+@media(max-width:700px){html{scroll-padding-top:76px}}
+@media(max-width:360px){.container{width:calc(100% - 40px)}}
+
+
+/* Leadgen layout gutters. Tailwind also defines `.container`; force these site gutters
+   to win over the generated utility, especially at mobile breakpoints. */
+.container {
+  width: calc(100% - 48px) !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 48px) !important;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 40px) !important;
+  }
+}

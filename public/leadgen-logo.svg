@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
+  <title id="title">Leadgen</title>
+  <desc id="desc">Leadgen wordmark with a three-bar forward mark and brass accent dot.</desc>
+  <g fill="#203B35" transform="translate(8 17) skewX(-16)">
+    <rect x="0" y="27" width="10" height="27"/>
+    <rect x="18" y="7" width="10" height="47"/>
+    <rect x="36" y="17" width="10" height="37"/>
+  </g>
+  <text x="76" y="64" fill="#172522" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-3.5">leadgen</text>
+  <circle cx="329" cy="61" r="5" fill="#B89558"/>
+</svg>

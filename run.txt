@@ -1,0 +1,9 @@
+docker build -t leadgen-marketing .
+
+docker run -d \
+  --name leadgen-marketing \
+  --restart unless-stopped \
+  -p 3000:3000 \
+  -e NUXT_PUBLIC_CONTACT_EMAIL=your@email.com \
+  -e NUXT_PUBLIC_CONTACT_PHONE="+91 YOUR NUMBER" \
+  leadgen-marketing
